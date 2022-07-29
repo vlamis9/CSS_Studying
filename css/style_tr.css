@@ -1,0 +1,192 @@
+.task1{
+    width:  40%;
+    height: 50px;
+    border: 1px solid red;
+    transition: 1s;
+}
+.task1:hover{
+    background-color: red;
+}
+.task2{
+    width:  40%;
+    height: 50px;
+    border: 1px solid red;
+    color:  red;
+    transition: 1s;
+}
+.task2:hover{
+    background-color: red;
+    color: white;
+}
+.task3{
+    width:  40%;
+    height: 50px;
+    border: 1px solid red;
+    transition: 1s;
+}
+.task3:hover{
+    width: 100%;
+}
+.task4{
+    width:  40%;
+    height: 50px;
+    border: 1px solid red;
+    color:  red;
+    font-size:  14px;
+    transition: 1s;
+}
+.task4:hover{
+    width: 100%;
+    font-size: 25px;    
+}
+.task5{
+    width:  40%;
+    height: 50px;
+    border: 1px solid red;
+    transition: 1s;
+}
+.task5:hover{
+    width: 60%;
+    transform: translate(20%);
+}
+.task6{
+    width:  40%;
+    height: 50px;
+    border: 1px solid red;
+    line-height: 50px;
+    white-space: nowrap;
+    text-align:  center;
+    text-indent: 100vw;
+    transition:  1s;  
+ }
+.task6:hover{
+    text-indent: 0;     
+}
+.task7{
+    width:  40%;
+    height: 50px;
+    border: 1px solid red;
+    transition: 3s 3s;
+}
+.task7:hover{
+    width: 100%;      
+}
+#name_id{
+    width:  40%;
+    height: 40px;    
+    transition: 1s;
+}
+#name_id:focus{
+     width: 50%;  
+     color: blue;
+     box-shadow: 0px 0px 2px 2px blue;
+     outline: none;
+}
+.task9GREEN{
+    border: 1px solid green;
+    padding: 20px 20px;    
+}
+.red{
+    width: 30%;
+    height: 30px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+    transition: 3s;
+}
+.task9GREEN:hover .red{
+    width: 100%;    
+}
+.task9GREEN .red:last-child{
+    margin-bottom: 0;
+}
+.task10, .task11, .task12{
+    padding: 20px 20px;         
+}
+.task10 .red:hover + .red{
+    width: 100%;
+}
+.task11 .red:hover ~ .red{
+    width: 100%;
+}
+/* .task12 .red:hover +.red +.red{ */
+.task12 .red:hover + .red + .red{
+    width: 100%;
+}
+.task13 .visible{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid red;
+}
+.task13 .hidden{
+    width: 10%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    margin-left: -100vw;
+    margin-top: 30px;
+    transition: 1s;
+}
+.task13 .visible:hover + .hidden{
+    margin-left: calc(100vw / 2 - 5%);
+}
+.task14 .red:first-child{
+    transition: 3s steps(5, start);
+}
+.task14 .red:last-child{
+    transition: 3s steps(5, end);
+}
+.task14:hover .red{
+    width: 100%;
+}
+.task15 .red{
+    transition: 3s cubic-bezier(0,-0.16,.93,.62);
+}
+.task15 .red:hover{
+    width: 100%;
+}
+.red .inner_red{    
+    width: 100%;
+    height: 30px;
+    background-color: red;
+    margin-left: -100%;
+    transition: 5s;
+}
+.task16 .red, .task17 .red{
+    width: 40%;
+    margin-left: calc(100vw / 2 - 25%);
+    overflow: hidden;    
+}
+.task16 .red:hover .inner_red, .task17 .red:hover .inner_red{
+    margin-left: 0;
+}
+.task17 .red .inner_red{
+    transition: 5s steps(5, start);}
+.task18{
+    height: 300px;
+}
+.task18 div{
+    width: 20%;
+    height: 50px;
+    border: 1px solid red;
+    margin-left: calc(100vw / 2 - 10%);
+    margin-bottom: 0;
+    margin-top: 10%;
+    box-shadow: -100px 100px black, 100px -100px black;
+    transition: 3s;
+}
+.task18 div:hover{
+    box-shadow: 100px 100px black, 100px 100px black;
+}
+#menu ul{
+    display: none;    
+}
+#menu li:hover > ul{
+    display: block;
+}
+
+
+
+
