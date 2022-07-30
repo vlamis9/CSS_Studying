@@ -1,0 +1,201 @@
+@keyframes task1{
+    0%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: 50vw;
+    }
+}
+.task1, .task2, .task4 .inner, .task5 .inner, .task6, .task7, .task10{
+    border: 1px solid red;
+    width: 50px;
+    height: 50px;   
+    animation: task1 3s 3; 
+}
+.task2{
+    animation: task1 3s infinite;
+}
+@keyframes task3{
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color: red;
+    }
+}
+.task3{
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;   
+    animation: task3 3s infinite; 
+}
+.task4, .task5{
+    height: 300px;
+    overflow: hidden;
+}
+@keyframes task4{
+    0%{
+        margin-left: 0;
+        margin-top: 0;
+    }
+    25%{
+        margin-left: 50%;
+        margin-top: 0;
+    }
+    50%{
+        margin-left: 50%;
+        margin-top: 20%;
+    }
+    75%{
+        margin-left: 0;
+        margin-top: 20%;
+    }
+    100%{
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+.task4 .inner{
+    animation: task4 3s infinite; 
+}
+@keyframes task5{
+    0%{
+        background-color: white;
+    }
+    50%{
+        background-color: red;
+    }
+    100%{
+        background-color: white;
+    }
+}
+.task5 .inner{
+    animation: task4 8s infinite, task5 2s infinite;  
+}
+@keyframes task6{
+    0%{
+        margin-left: 0;
+    }
+    50%{
+        margin-left: 50vw;    
+    }
+    100%{
+        margin-left: 0;   
+    }
+}
+.task6{
+    animation: task6 3s infinite; 
+}
+.task7{
+    animation: task6 3s infinite alternate; 
+}
+.red{
+    margin: 0 auto;
+    width: 30%;
+    height: 30px;
+    border: 1px solid red;
+    overflow: hidden;
+}
+.red .inner_red{    
+    width: 100%;
+    height: 30px;
+    background-color: red;
+    margin-left: -100%;
+}
+@keyframes indicator{
+    0%{
+        margin-left: -100%;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
+.task8 .red .inner_red{
+    animation: indicator 5s 1 forwards;
+}
+.task9 .red .inner_red{
+    animation: indicator 5s infinite;
+}
+@keyframes task10{
+    0%{
+        width: 50px;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.task10{
+    animation: task10 5s infinite alternate;
+    animation-play-state: paused;
+}
+.task10:hover{
+    animation-play-state: running;
+}
+.task11 .first{
+    width: 30%;
+    height: 30px;
+    line-height: 30px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid red;
+}
+.task11 .second{
+    width: 20%;
+    height: 40px;
+    border: 1px solid blue;
+    animation: task10 5s infinite alternate;
+    animation-play-state: paused;
+}
+.task11 .first:hover + .second{
+    animation-play-state: running;
+}
+.task12{
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+.task12 .ball{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: red;
+    animation: ball_anim 7s infinite;
+}
+@keyframes ball_anim{
+    0%{
+        margin-left: 0;
+        margin-top: 0;
+        animation-timing-function: ease-in;
+    }
+    35%{
+        margin-left: 10%;
+        margin-top: calc(100% - 20px);         
+        animation-timing-function: ease-out;
+    }
+    50%{
+        margin-left: 20%;
+        margin-top: calc(100% - 20px * 3);
+        animation-timing-function: ease-in;
+    }
+    70%{
+        margin-left: 30%;
+        margin-top: calc(100% - 20px); 
+        animation-timing-function: ease-out;       
+    }
+    85%{
+        margin-left: 40%;
+        margin-top: calc(100% - 20px * 2);
+        animation-timing-function: ease-in;
+    }
+    95%{
+        margin-left: 45%;
+        margin-top: calc(100% - 20px); 
+        animation-timing-function: ease-out; 
+    }
+    100%{
+        margin-left: 50%;
+        margin-top: calc(100% - 30px); 
+        animation-timing-function: ease-out; 
+    }
+}
